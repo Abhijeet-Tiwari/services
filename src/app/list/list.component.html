@@ -1,0 +1,17 @@
+<div [ngClass]="'rightPanel'">
+	<h3>Menu</h3>
+	
+	<select (change)="onChange($event)">
+			<option *ngFor="let hero of listHeroes" value= {{hero.id}}>
+				{{hero.name}}
+			</option>
+		</select>
+
+		<h3>Selected Hero</h3>
+		<p>ID: {{selectedHero.id}}</p>
+		<p>Lname: {{selectedHero.lname}}</p>
+		<p>Age: {{selectedHero.age}}</p>
+		<p>House No: {{selectedHero.houseNum}}</p>		
+		
+</div>
+

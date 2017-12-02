@@ -1,0 +1,15 @@
+<div [ngClass]="'leftPanel'">
+   <h3>Hero</h3>
+	<div [ngClass]="'heroBox'" *ngFor="let hero of heroes" >
+	  <div>
+		<div >
+		  <h4>Name:{{hero.name}}</h4>
+		  <h4 >Id:{{hero.id}}</h4>
+	
+		</div>
+		<div>
+		  <button type="button" (click)="addHeroToList(hero.id)">Add to Menu</button>
+		</div>
+	  </div>
+	</div>
+</div>

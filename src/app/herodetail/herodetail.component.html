@@ -1,0 +1,7 @@
+<div [ngClass]="'leftPanel'">
+    <h3>HeroDetails</h3>
+        <h4 *ngFor="let heroDetail of heroesDetails"  >
+          {{ heroDetail.lname }},
+          {{ heroDetail.age }},
+          {{ heroDetail.houseNum }}
+        </h4>
